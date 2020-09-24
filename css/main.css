@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* BTN */
+.btn {
+  position: relative;
+  display: inline-block;
+  height: 5.7rem;
+  background: #2500f9;
+  padding: 2.2rem 3.9rem;
+  border-radius: 28px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+.btn > a {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #2500f9 23%, #0066ff 100%);
+  border-radius: 28px;
+  transition: all 0.4s;
+}
+.btn:hover::after { left: 0; }
+
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+
+/* SUMMARY */
+.summary-title {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #242f51;
+  line-height: 1.25;
+  margin-bottom: 3.4rem;
+}
+.summary-description {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #616368;
+  line-height: 1.5;
+}
+.summary-sub-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #242f51;
+  line-height: 1.25;
+  margin-bottom: 1.6rem;
+}
+.summary-sub-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #242f51;
+  line-height: 1.5;
+}
+.red {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f55767;
+}
+.blue {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2563ff;
+}
+.green {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #40975f;
+}
+
+/* INNER */
+.inner {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* SECTION */
+.section {
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+.header .gnb {
+  display: flex;
+  /* margin-left: 27rem; */
+}
+.header .gnb > li {
+  margin-left: 4rem;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+.header .gnb > li > a {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #242f51;
+}
+.header .gnb > li > a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3c4c7d;
+  transition: width 0.4s;
+}
+.header .gnb > li:hover a::after { width: 100%; }
+
+
+/* MAIN */
+.main {
+  width: 100%;
+}
+.main-container {
+  max-width: 100%;
+  height: 865px;
+  background: url(../images/main-bg.jpg) no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.5rem 7rem;
+  box-sizing: border-box;
+}
+.main-content .choice {
+  position: relative;
+  max-width: 520px;
+  height: 368px;
+  /* margin-top: 23.8rem; */
+  color: #242f51;
+}
+.choice .txt {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  background: #e2eaed;
+  padding: 1rem 4.5rem;
+  border-radius: 28px;
+  box-sizing: border-box;
+}
+.choice .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.choice .title {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 2.4rem 0;
+}
+.choice .sub-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #616368;
+  margin-bottom: 4rem;
+}
+.main-img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 54px;
+}
+
+/* COMPANIES */
+.companies {
+  margin: 11.6rem 0; 
+}
+.companies-logo {
+  padding: 0 11.7rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.companies-logo > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.app-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 14rem 0;
+}
+.app-container .phon-wrap {
+  margin-left: 13.7rem;
+}
+.app-tit {
+  max-width: 43rem;
+}
+.app-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 9rem;
+  box-sizing: border-box;
+}
+.icon-wrap { margin-right: 3rem; } 
+.icon-wrap > li { margin-bottom: 6rem; }
+.icon-description > li {
+  font-size: 1.6rem;
+  color: #616368;
+  text-align: justify;
+  margin-bottom: 6rem;
+}
+.icon-description > li > strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.2rem;
+}
+
+.smart-container {
+  margin: 0 auto;
+}
+.smart-tit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 11.4rem auto;
+}
+.smart-tit .summary-title {
+  margin-left: 5rem;
+}
+.smart-tit .summary-sub-description {
+  margin: 0 auto;
+}
+.smart-icon { 
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 11.5rem;
+}
+.smart-icon .icon-wrap li {
+  margin: 0;
+}
+.smart-icon .icon-wrap li:first-child { margin-bottom: 3rem; }
+.smart-icon .icon-wrap li.red,
+.smart-icon .icon-wrap li.blue,
+.smart-icon .icon-wrap li.green
+{ margin-bottom: 1.7rem; }
+
+.designed-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.designed-container .btn { margin-top: 4rem;}
+
+/* CHOOSE */
+.choose {
+  text-align: center;
+  margin-bottom: 19rem;
+}
+.choose .choose-tit { margin-bottom: 9.5rem; }
+.choose-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
+.choose-icon .icon-wrap {
+  margin: 0 9.4rem 7rem 0;
+}
+.choose-icon .icon-wrap:nth-child(3),
+.choose-icon .icon-wrap:nth-child(6) 
+{ margin-right: 0; }
+.choose-icon .icon-wrap li { margin: 0; }
+.choose-icon .icon-wrap > .summary-sub-title { margin: 3.6rem 0 1.7rem; }
+
+/* ULTIMATE */
+.ultimate { 
+  position: relative; 
+  margin-bottom: 17.4rem;
+}
+.ultimate-icon { 
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 6rem 0 0;
+}
+.ultimate-icon .icon-wrap {
+  margin: 0 9.4rem 7rem 0;
+}
+.ultimate-icon .icon-wrap:nth-child(2),
+.ultimate-icon .icon-wrap:nth-child(4) 
+{ margin-right: 0; }
+.ultimate-icon .icon-wrap li { margin: 0; }
+
+.phon-wrap2 {
+  position: absolute;
+  top: 0;
+  right: -250px;
+}
