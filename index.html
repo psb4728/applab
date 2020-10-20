@@ -18,19 +18,31 @@
   <link rel="stylesheet" href="css/text.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-  <header class=" header inner">
+  <header class="header">
     <h1 class="logo">
       <a href="#"><img src="images/logo.png" alt="logo"></a>
     </h1>
-    <ul class="gnb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Key Features</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Testiminial</a></li>
-      <li><a href="#">FAQ</a></li>
-    </ul>
+
+    <!-- Toggle button -->
+    <div class="toggle-btn">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+
+    <nav class="nav">
+      <ul class="gnb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Key Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Testiminial</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
     <div class="btn"><a href="#">Try for free</a></div>
   </header> 
 
@@ -175,7 +187,7 @@
     <div class="ultimate-tit">
       <h2 class="summary-title">Ultimate features<br>that we built</h2>
       <h3 class="summary-sub-description">The rise of mobile devices transforms the way we<br>consume information entirely.</h3>
-  </div>
+    </div>
 
     <div class="ultimate-icon inner">
       <ul class="icon-wrap">
@@ -205,5 +217,66 @@
       <img src="images/bg-img3.jpg" alt="">
     </div>
   </section>
+
+  <!-- PAYMENT -->
+  <section class="payment inner">
+    <div class="pay-tit">
+      <h2 class="summary-title">Get awesome features, without<br>extra charges</h2>
+      <h3 class="summary-sub-description">The rise of mobile devices transforms the way we consume information entirely<br>and the world's most elevant channels such as Facebook.</h3>
+    </div>
+    
+    <div class="select-container">
+      <div id="select1" class="select-wrap active">
+        <div class="price">
+          <p class="price-num">$0<span>/ month</span></p>
+          <p class="price-txt">Business Class<br><span>For small teams or office</span></p>
+        </div>
+        <div class="select-txt">
+          <p>Drag & Drop Builder
+            1,000's of Templates
+            Blog Support Tools
+            eCommerce Store 
+          </p>
+        </div>
+        <div class="btn"><a href="#">Start free trail</a></div>
+      </div>
+      <div id="select1" class="select-wrap margin active">
+        <div class="price">
+          <p class="price-num">$99<span>/ month</span></p>
+          <p class="price-txt">Pro Master<br><span>For Best opportunities</span></p>
+        </div>
+        <div class="select-txt">
+          <p>Drag & Drop Builder
+            1,000's of Templates
+            Blog Support Tools
+            eCommerce Store 
+          </p>
+        </div>
+        <div class="btn"><a href="#">Subscribe Now</a></div>
+      </div>
+   </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-wrap">
+      <p><img src="images/footer-logo.png" alt="AppLab"></p>
+      <ul class="footer-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Key Features</a></li>
+        <li><a href="#">Pricing </a></li>
+        <li><a href="#">Testiminial</a></li>
+        <li><a href="#">FAQ</a></li>                 
+      </ul>
+      <ul class="sns">
+        <li><a href="#"><i class="xi-facebook"></i></a></li>
+        <li><a href="#"><i class="xi-twitter"></i></a></li>
+        <li><a href="#"><i class="xi-slack"></i></a></li>
+        <li><a href="#"><i class="xi-github"></i></a></li>
+      </ul>
+      <p class="copy">Copyright&copy; Arifur Rahman Tushar 2019. All rights reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
