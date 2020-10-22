@@ -1,11 +1,11 @@
 'use strict';
 
 // navbar 스크롤링시 고정
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
   var navbar = document.querySelector('.header');
   var navbarHeight = navbar.offsetTop;
 
-  if(window.pageYOffset > navbarHeight) {
+  if (window.pageYOffset > navbarHeight) {
     navbar.classList.add('stiky');
   } else {
     navbar.classList.remove('stiky');
@@ -15,17 +15,17 @@ document.addEventListener('scroll', function() {
 
 // gnb menu 클릭시 원하는 섹션으로 이동
 var gnb = document.querySelector('.gnb');
-gnb.addEventListener('click', function(event) {
+gnb.addEventListener('click', function (event) {
   // 모바일 화면에서 nav-menu를 클릭시 active 클래스를 remove하기 위한 변수
   var navWrap = document.querySelector('.nav');
   var navbar = document.querySelector('.header');
-  
+
   var target = event.target;
   var link = target.dataset.link;
   if (link == null) {
     return;
   }
-  
+
   navbar.classList.remove('active');
   navWrap.classList.remove('active');
   gnb.classList.remove('active');
@@ -61,7 +61,7 @@ function scrollIntoView(selector) {
 // toggle btn
 var menuIcon = document.querySelector('.toggle-btn');
 
-menuIcon.addEventListener('click', function() {
+menuIcon.addEventListener('click', function () {
   var navbar = document.querySelector('.header');
   var navWrap = document.querySelector('.nav');
   navWrap.classList.toggle('active');
@@ -71,32 +71,32 @@ menuIcon.addEventListener('click', function() {
 
 // back to top
 var btt = document.getElementById('back-to-top'),
-    docElem = document.documentElement,
-    offset,
-    scrollPos,
-    docHeight;
+  docElem = document.documentElement,
+  offset,
+  scrollPos,
+  docHeight;
 
 docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
-  if(docHeight !== 0) {
-    offset = docHeight / 4;
-  } 
+if (docHeight !== 0) {
+  offset = docHeight / 4;
+}
 
-  window.addEventListener('scroll', function() {
-    scrollPos = docElem.scrollTop;
-  
-    btt.className = (scrollPos > offset) ? 'visible' : '';
-  }); 
+window.addEventListener('scroll', function () {
+  scrollPos = docElem.scrollTop;
 
-btt.addEventListener('click', function(e) {
+  btt.className = (scrollPos > offset) ? 'visible' : '';
+});
+
+btt.addEventListener('click', function (e) {
   e.preventDefault();
   scrollToTop();
 });
 function scrollToTop() {
-  var scrollInterval = setInterval(function() {
-    if(scrollPos !== 0) {
+  var scrollInterval = setInterval(function () {
+    if (scrollPos !== 0) {
       window.scrollBy(0, -150);
     } else {
       clearInterval(scrollInterval);
     }
-  },15);
+  }, 15);
 }
