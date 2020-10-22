@@ -49,6 +49,9 @@
   float: right;
 }
 
+/* HIDE */
+.hide { text-indent: -9999em; }
+
 /* SUMMARY */
 .summary-title {
   font-size: 3.6rem;
@@ -315,7 +318,7 @@
 
 .designed-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin: 0 auto;
 }
@@ -495,7 +498,7 @@ footer {
   .app-tit { margin-right: 1rem; }
   .companies-logo { padding: 0; }
   .icon-description > li { text-align: left; }
-  .designed-container > img {  max-width: 40%; }
+  .designed-container > img {  width: 40%; }
   .ultimate-tit { box-sizing: border-box; padding-left: 5rem; }
   .ultimate-icon { margin: 6rem 5rem 0; }
   .ultimate > .btn { margin-left: 5rem; }
