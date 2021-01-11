@@ -204,6 +204,7 @@
   box-sizing: border-box;
 }
 .main-content .main-img { margin-top: 14rem; }
+
 .choice .txt {
   display: block;
   width: 100%;
@@ -239,6 +240,7 @@
   border-radius: 5.4rem;
 }
 
+
 /* COMPANIES */
 .companies {
   margin: 11.6rem 0; 
@@ -271,13 +273,32 @@
   margin-top: 9rem;
   box-sizing: border-box;
 }
+
 /* .smart-icon .icon-wrap { margin-left: 3rem; }  */
-.icon-wrap > li { margin-bottom: 6rem; }
+.app-icon .icon-wrap > li { 
+  transform: translateY(4rem);
+  transition: all .8s;
+  transition-delay: .5s;
+  margin: 0 2rem 6rem 0; 
+  opacity: 0;
+}
+.app-icon .icon-wrap.show li {
+  transform: translateY(0);
+  opacity: 1;
+} 
+.icon-description.show > li {
+  transform: translateY(0rem);
+  opacity: 1;
+}
 .icon-description > li {
   font-size: 1.6rem;
   color: #616368;
   text-align: justify;
   margin-bottom: 6rem;
+  transform: translateY(4rem);
+  transition: all .8s;
+  transition-delay: .5s;
+  opacity: 0;
 }
 .icon-description > li > strong {
   display: block;
@@ -297,9 +318,26 @@
 }
 .smart-tit .summary-title {
   margin-left: 5rem;
+  transform: translateX(-10rem);
+  transition: all .5s;
+  transition-delay: 1.5s;
+  opacity: 0;
+}
+.smart-tit .summary-title.show {
+  transform: translateX(0);
+  opacity: 1;
+
 }
 .smart-tit .summary-sub-description {
   margin: 0 auto;
+  transform: translateX(10rem);
+  transition: all .5s;
+  transition-delay: 1.5s;
+  opacity: 0;
+}
+.smart-tit .summary-sub-description.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 .smart-icon { 
   display: flex;
@@ -616,19 +654,21 @@ footer {
     margin-top: 9rem;
     box-sizing: border-box;
   }
-  .icon-wrap > li { margin-bottom: 6rem; }
-  .icon-description > li {
+  .app-icon .icon-wrap > li { margin-bottom: 6rem; }
+  .app-icon .icon-description > li {
     font-size: 1.6rem;
     color: #616368;
     text-align: justify;
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
-  .icon-description > li > strong {
+  .app-icon .icon-description > li > strong {
     display: block;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2.2rem;
   }
+  .app-icon .icon-description > li > strong.green { padding-top: 1.5rem; }
+
   
   .smart-icon { 
     display: flex;

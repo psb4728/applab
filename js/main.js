@@ -57,6 +57,24 @@ function scrollIntoView(selector) {
 //   scrollTo.scrollIntoView({ behavior: 'smooth' });
 // }
 
+// 
+var appIcons = document.querySelector('.app-icon .icon-wrap'),
+    desc = document.querySelector('.icon-description'),
+    summaryTit = document.querySelector('.smart-tit .summary-title'),
+    summaryDesc = document.querySelector('.smart-tit .summary-sub-description'),
+    section = document.querySelector('.app-container').offsetTop - 400;
+
+function showScroll() {
+  var currentScroll = window.pageYOffset;
+  if (section < currentScroll) {
+    appIcons.classList.add('show');
+    desc.classList.add('show');
+    summaryTit.classList.add('show');
+    summaryDesc.classList.add('show');
+  } 
+}
+window.addEventListener('scroll', showScroll);
+
 
 // toggle btn
 var menuIcon = document.querySelector('.toggle-btn');
