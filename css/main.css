@@ -116,7 +116,7 @@
   align-items: center;
   width: 100%;
   height: 10rem;
-  z-index: 1;
+  z-index: 10;
 }
 .header.stiky { background: rgba(255, 255, 255, .9); }
 .toggle-btn {
@@ -615,6 +615,14 @@ footer {
   }
   .header .btn { display: none; }
   .toggle-btn { display: flex; }
+
+  .phon {
+    width: 50%;
+    height: auto;
+    margin-right: 2rem;
+    transform: translateY(15%);
+
+  }
 
   .choice .icon,
   .choice .txt {display: none;}
