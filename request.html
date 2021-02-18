@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta viewport="user-scalble=0">
+  <title>법무법인 위공 플러스페이 내용증명 관리 플랫폼 의뢰진행 현황</title>
+  <meta name="description" content="법무법인 위공 플러스페이 내용증명 관리 플랫폼 의뢰진행 현황">
+  <meta name="author" content="에이블시스템">
+
+  <!-- og -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="법무법인 위공 플러스페이 내용증명 관리 플랫폼">
+  <meta property="og:title" content="법무법인 위공 플러스페이 내용증명 관리 플랫폼">
+  <meta property="og:description" content="법무법인 위공 플러스페이 관리자 사이트">
+  <meta property="og:image" content="#">
+  <meta property="og:image:width" content="800">
+  <meta property="og:img:height" content="400">
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/request.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header inner">
+    <h1 class="logo"><a href="#"><img src="./images/top_logo.png" alt="법무법인 위공"></a></h1>
+    <div class="ham_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="user_info_wrap">
+      <p>
+        <a href="#">
+          <i class="xi-user-o"></i><span class="wel_text">admin1234<span class="remove">님 환영합니다!</span></span>
+        </a>
+      </p>
+    </div>
+  </header>
+
+  <!-- Popup Background -->
+  <div class="popup_bg"></div>
+
+  <!-- Contern Body -->
+  <div class="content_body">
+    <!-- Side Menu -->
+    <aside class="side_menu">
+      <nav class="menu_wrap">
+        <ul>
+          <li><a href="#" class="submenu_btn">가맹점관리<span class="xi-caret-down first_down_icon"></span></a>
+            <ul class="sub_menu sub_down1">
+              <li><a href="#" target="blank">가맹점관리 현황</a></li>
+              <li><a href="#" target="blank">이용업체 등록</a></li>
+              <li><a href="#" target="blank">내용증명 입력</a></li>
+              <li><a href="#" target="blank">소송접수 관리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" target="blank">의뢰진행 현황</a></li>
+          <li><a href="#" target="blank">자료신청</a></li>
+          <li><a href="#" target="blank">답변서 접수 및 현황</a></li>
+          <li><a href="#" target="blank">위약금 수취 및 엡체입금</a></li>
+          <li><a href="#" target="blank">지급명령 및 소송접수</a></li>
+        </ul>
+      </nav>
+      <!-- link Button -->
+      <div class="link_btn_wrap">
+        <ul>
+          <li><a href="#" target="blank">법률사무소</a></li>
+          <li><a href="#" target="blank">로그아웃</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <section class="content_container">
+      <div class="content_inner">
+        <div class="content_tit">
+          <h2 class="tit">의뢰진행 현황</h2>
+        </div>
+
+        <!-- info container -->
+        <div class="info_container inner">
+          <div class="info_inner">
+            <form action="3" method="post">
+              <input type="date" name="calendar" id="calendar">
+              <span class="line"></span>
+              <input type="date" name="calendar" id="calendar">
+              <select name="select" id="select">
+                <option value="">선택</option>
+                <option value="com1">업체명</option>
+                <option value="com2">업체명</option>
+                <option value="com3">업체명</option>
+                <option value="com4">업체명</option>
+                <option value="com5">업체명</option>
+              </select>
+              <div class="search_wrap">
+                <input type="text" name="search" id="search">
+                <button class="btn"><i class="xi-search"></i></button>
+              </div>
+            </form>
+          </div> <!-- info_inner end-->
+        </div> <!-- info_container end-->
+
+        <!-- bg_wrap -->
+        <div class="bg_img_wrap"></div>
+        
+        <!-- content table -->
+        <div class="content_tbl">
+          <h2 class="hide">의뢰진행 현황</h2>
+          <!-- content area -->
+          <div class="user_tbl_wrap">
+            <table class="user_list_tbl">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" name="allcheck" id="allcheck" class="all_check"></th>
+                  <th>순번</th>
+                  <th>접수일자</th>
+                  <th>완료일자</th>
+                  <th>가맹점상호</th>
+                  <th>아이디</th>
+                  <th>고객명</th>
+                  <th>총이용금액</th>
+                  <th>총위약금</th>
+                  <th>사용일수</th>
+                  <th>사용금액</th>
+                  <th>해지위약금</th>
+                  <th>계약서 첨부</th>
+                  <th>진행상태</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>1</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>2</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>3</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>4</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>5</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>6</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>7</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="checkbox" id="checkbox" class="checkbox"></td>
+                  <td>8</td>
+                  <td>2021.02.08</td>
+                  <td><a href="#" class="yellow">2021.02.10</a></td>
+                  <td>에이블시스템</td>
+                  <td>admin1234</td>
+                  <td>홍길동</td>
+                  <td>결제금액 액수</td>
+                  <td>위약금산정기준 합계 금액</td>
+                  <td>30일</td>
+                  <td>사용금액 액수</td>
+                  <td>해지위약금 금액</td>
+                  <td><a href="#">계약서 파일 첨부</a></td>
+                  <td>접수대기</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- btn_wrap -->
+        <div class="btn_wrap">
+          <button class="register com_btn"><a href="#">등록</a></button>
+          <button class="hold com_btn"><a href="#">보류</a></button>
+          <button class="delete com_btn"><a href="#">삭제</a></button>
+        </div>
+        <div class="page_nav">
+          <ul>
+            <li class="prev"><a href="#">Prev</a></li>
+            <li><a href="#" class='current' data-tab="tab-1">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li class="next"><a href="#">Next</a></li>
+          </ul>
+        </div>
+
+      </div> <!-- content_inner end-->
+    </section> <!-- content_container end -->
+  </div> <!-- content_body end-->
+
+  <!-- Footer -->
+  <footer class="footer">
+    footer 자리
+  </footer>
+
+
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
